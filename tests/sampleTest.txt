@@ -1,0 +1,16 @@
+Scenario: simple Google search
+Open chrome browser
+Goto google.co.in
+Click on search textbox <e12>
+Enter "iphone"
+Press "Enter"
+Take screenshot
+
+Scenario: simple login
+Open chrome browser
+Goto saucedemo.com
+Click on username textbox <e15>
+Enter "username"
+Click on password textbox <e16>
+Enter "password"
+Click on submit button <e17>
