@@ -1,4 +1,4 @@
-const { runScenario } = require('./runner/scenarioRunner');
+import { runScenario } from './runner/scenarioRunner.js';
 
 const filePath = process.argv[2];
 

@@ -8,4 +8,4 @@ const regexPatterns = {
   close: /Close browser/
 };
 
-module.exports = regexPatterns;
+export default regexPatterns;

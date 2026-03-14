@@ -1,11 +1,11 @@
-const util = require('util');
-const child_process = require('child_process');
+import util from 'util';
+import child_process from 'child_process';
 const exec = util.promisify(child_process.exec);
 
 async function open(browserName) {
   console.log(`Opening ${browserName} browser`);
   try {
-    await exec(`playwright-cli open ${browserName}`);
+    await exec(`playwright-cli open --browser=${browserName}`);
   } catch (error) {
     // Suppress errors for mock purposes if playwright-cli is not installed, but log it
     // console.error(`Failed to open browser:`, error.message);
@@ -66,7 +66,7 @@ async function close() {
   }
 }
 
-module.exports = {
+export {
   open,
   goto,
   click,

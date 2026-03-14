@@ -1,5 +1,5 @@
-const fs = require('fs');
-const { parseAndExecuteStep } = require('../parser/stepParser');
+import fs from 'fs';
+import { parseAndExecuteStep } from '../parser/stepParser.js';
 
 async function runScenario(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8');
@@ -17,4 +17,4 @@ async function runScenario(filePath) {
   }
 }
 
-module.exports = { runScenario };
+export { runScenario };

@@ -1,5 +1,5 @@
-const regexPatterns = require('../utils/regexPatterns');
-const playwrightCommands = require('../commands/playwrightCommands');
+import regexPatterns from '../utils/regexPatterns.js';
+import * as playwrightCommands from '../commands/playwrightCommands.js';
 
 async function parseAndExecuteStep(step) {
   if (regexPatterns.open.test(step)) {
@@ -26,4 +26,4 @@ async function parseAndExecuteStep(step) {
   }
 }
 
-module.exports = { parseAndExecuteStep };
+export { parseAndExecuteStep };
