@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Automation framework using reusable playwright CLI commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madasamy11/Playwright-CLI-Automation-Framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/madasamy11/Playwright-CLI-Automation-Framework/issues"
+  },
+  "homepage": "https://github.com/madasamy11/Playwright-CLI-Automation-Framework#readme"
+}
